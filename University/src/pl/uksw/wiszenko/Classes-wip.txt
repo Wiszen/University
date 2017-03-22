@@ -1,18 +1,16 @@
 Person (abstract):
 	- firstName String
 	- secondName String
-	- globalId int
 	- male boolean
-	- 
  
-VipPerson (extend Person):
-	- 
+VipPerson (extend Person):r
+	- reason String
 UniversityPerson (extend Person):
 	- universityId int
+    - department String
 Teacher (extend UniversityPerson): 
 	- academicTitle String
-	- department String
 	- subject String
-	- 
 Student (extend UniversityPerson):
-	- 
+	- semester int
+    - studieProgram String
