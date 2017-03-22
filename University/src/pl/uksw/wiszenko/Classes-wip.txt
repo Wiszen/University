@@ -2,8 +2,8 @@ Person (abstract):
 	- firstName String
 	- secondName String
 	- male boolean
- 
-VipPerson (extend Person):r
+    - pub Person(fN, sN, m)
+VipPerson (extend Person)
 	- reason String
 UniversityPerson (extend Person):
 	- universityId int
