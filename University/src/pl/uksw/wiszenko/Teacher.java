@@ -16,7 +16,7 @@ public class Teacher extends UniversityPerson implements Personality {
 	public void printFields(){
 		System.out.print(academicTitle + " ");
 		super.printFields();
-		System.out.println();
+		System.out.println(subject);
 	}
 	
 	@Override

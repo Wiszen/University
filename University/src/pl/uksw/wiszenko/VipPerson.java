@@ -7,7 +7,7 @@ public class VipPerson extends Person implements Personality {
 	private Calendar endDate;
 	private Calendar startDate;
 	
-	public VipPerson(String firstName, String lastName, boolean male, Calendar endDate, Calendar startDate) {
+	public VipPerson(String firstName, String lastName, boolean male, Calendar startDate, Calendar endDate) {
 		super(firstName, lastName, male);
 		this.endDate = endDate;
 		this.startDate = startDate;
@@ -42,6 +42,6 @@ public class VipPerson extends Person implements Personality {
 	public void printFields() {
 		super.printFields();
 		SimpleDateFormat formatDate = new SimpleDateFormat("dd/M/yyyy");
-		System.out.println(formatDate.format(startDate) + " - " + formatDate.format(endDate));
+		System.out.println(formatDate.format(startDate.getTime()).toString() + " - " + formatDate.format(endDate.getTime()).toString());
 	}
 }

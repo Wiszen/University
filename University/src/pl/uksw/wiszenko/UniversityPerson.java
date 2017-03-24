@@ -44,7 +44,7 @@ public class UniversityPerson extends Person implements Personality {
 	@Override
 	public void printFields() {
 		super.printFields();
-		System.out.print(this.universityId + " " + this.department);
+		System.out.print(this.universityId + " " + this.department + " ");
 		if(this.active){
 			System.out.println("Active");
 		} else{

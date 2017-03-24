@@ -27,18 +27,18 @@ public class Main {
 		VipPerson vipPerson = new VipPerson("Frank", "Sinatra", true, start, end);
 		UniversityPerson universityPerson = new UniversityPerson("Mark", "Zuckerberg", true, 90001, "IT", true);
 		Teacher teacher = new Teacher("Anna", "Wesolowska", false, 91002, "Filosophy and Christianity", false, "Bechelor", "Greek Filosophy");
-		Student student = new Student("Grzegorz", "Brzeczyszczykiewicz", false, 90005, "Chemistry", false, "Chemistry", 3);
+		Student student = new Student("Mariola", "Haliczowna", false, 90005, "Chemistry", false, "Chemistry", 3);
 		
 		vipPerson.sayHello();
 		vipPerson.printFields();
 		vipPerson.getDaysToEnd();
-		
-		universityPerson.printFields();
+		System.out.println();
 		universityPerson.sayHello();
-		
+		universityPerson.printFields();
+		System.out.println();
 		teacher.sayHello();
 		teacher.printFields();
-		
+		System.out.println();
 		student.sayHello();
 		student.printFields();
 		if(student.isLastYear()){
