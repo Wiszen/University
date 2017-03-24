@@ -2,24 +2,23 @@ Person (abstract):
 	- firstName String
 	- secondName String
 	- male boolean
- - creationDate Date
- - pub Person(fN, sN, m)
+ 	- creationDate Date
+ 	- pub Person(fN, sN, m)
 VipPerson (extend Person)
-	- reason String
- - endDay Date
- - pub VipPerson(fN, sN, m, r)
- - getDaysToEnd()
+ 	- endDay Date
+ 	- pub VipPerson(fN, sN, m, r)
+ 	- getDaysToEnd()
 UniversityPerson (extend Person):
 	- universityId int
- - department String
- - active boolean
- - public UniversityPerson(fN, sN, m, uI, d)
+ 	- department String
+ 	- active boolean
+ 	- public UniversityPerson(fN, sN, m, uI, d)
 Teacher (extend UniversityPerson): 
 	- academicTitle String
 	- subject String
- - public Teacher(fN, sN, m, uI, d,aT, s)
+ 	- public Teacher(fN, sN, m, uI, d,aT, s)
 Student (extend UniversityPerson):
 	- semester int
- - studieProgram String
- - public Student(fN, sN, m, uI, d, sem, sP)
- - boolean isNearEndOfStudies()
+ 	- studieProgram String
+ 	- public Student(fN, sN, m, uI, d, sem, sP)
+ 	- boolean isNearEndOfStudies()
