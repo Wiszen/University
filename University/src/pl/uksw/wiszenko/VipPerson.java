@@ -6,9 +6,10 @@ public class VipPerson extends Person implements Personality {
 	private Calendar endDate;
 	private Calendar startDate;
 	
-	public VipPerson(String firstName, String lastName, boolean male, Calendar endDate) {
+	public VipPerson(String firstName, String lastName, boolean male, Calendar endDate, Calendar startDate) {
 		super(firstName, lastName, male);
 		this.endDate = endDate;
+		this.startDate = startDate;
 	}
 
 	public int getDayToEnd(){
