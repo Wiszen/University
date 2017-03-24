@@ -28,7 +28,7 @@ public abstract class Person implements Personality{
 
 	@Override
 	public void printFields() {
-		System.out.print("Person: " + this.getFirstName() + " " + this.getLastName() + " ");
+		System.out.print(this.getFirstName() + " " + this.getLastName() + " ");
 		if(this.isMale()){
 			System.out.println("Male");
 		} else{
