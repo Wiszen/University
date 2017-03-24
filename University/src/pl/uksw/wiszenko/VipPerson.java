@@ -13,7 +13,7 @@ public class VipPerson extends Person implements Personality {
 		this.startDate = startDate;
 	}
 
-	public int getDayToEnd(){
+	public int getDaysToEnd(){
 		return (int) (endDate.getTimeInMillis() - startDate.getTimeInMillis()) / (1000*60*60*24);
 	}
 	
