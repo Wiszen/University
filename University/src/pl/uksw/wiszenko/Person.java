@@ -14,6 +14,12 @@ public abstract class Person implements Personality{
 	private String lastName;
 	private boolean male;
 	
+	public Person(){
+		this.firstName = "Brak";
+		this.lastName = "Brak";
+		this.male = false;
+	}
+	
 	public Person(String firstName, String lastName, boolean male) {
 		this.firstName = firstName;
 		this.lastName = lastName;
