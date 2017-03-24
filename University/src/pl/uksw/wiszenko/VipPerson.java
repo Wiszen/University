@@ -1,5 +1,6 @@
 package pl.uksw.wiszenko;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class VipPerson extends Person implements Personality {
@@ -31,7 +32,16 @@ public class VipPerson extends Person implements Personality {
 	public void setStartDate(Calendar startDate) {
 		this.startDate = startDate;
 	}
-	
-	
 
+	@Override
+	public void sayHello() {
+		System.out.println("Good morning!");
+	}
+	
+	@Override
+	public void printFields() {
+		super.printFields();
+		SimpleDateFormat formatDate = new SimpleDateFormat("dd/M/yyyy");
+		System.out.println(formatDate.format(startDate) + " - " + formatDate.format(endDate));
+	}
 }
